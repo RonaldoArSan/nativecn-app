@@ -1,15 +1,13 @@
-import "@/styles/global.css"
-
-import { StatusBar } from "expo-status-bar"
-import { ToastProvider } from "@/components/Toast"
-
-import { Profile } from "@/app/Profile"
+import "@/styles/global.css";
+import { Text, View } from "react-native";
+import { StatusBar } from "expo-status-bar";
+import React from "react";
 
 export default function App() {
   return (
-    <ToastProvider position="top">
-      <Profile />
+    <View className="flex-1 justify-center items-center">
+      <Text>Hello World!</Text>
       <StatusBar style="light" />
-    </ToastProvider>
-  )
+    </View>
+  );
 }
